@@ -23,10 +23,9 @@ describe('To test customer', () => {
         expect(cust.phone.length).toBe(10);
         
     });
-   it('should check bill amount', () => {
-    const cust = new customer("Neema", "neema@gmail.com" , "11-12-2020","1234567890","850");
-    
-        expect(cust.billAmount).toBe('850');
+   it('should check bill amount is min 500', () => {
+        const cust = new customer("ABCDE", "happy@gmail.com" , "10-12-2020","8281268966","600");
+       expect(cust.billAmount).toBeGreaterThan(500);
         
     });
     it('should check date', () => {
