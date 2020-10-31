@@ -24,7 +24,7 @@ describe('To test customer', () => {
         
     });
    it('should check bill amount is min 500', () => {
-        const cust = new customer("ABCDE", "happy@gmail.com" , "10-12-2020","8281268966","600");
+        const cust = new customer("Neema", "neema@gmail.com" , "11-12-2020","8281268966","850");
        expect(cust.billAmount).toBeGreaterThan(500);
         
     });
